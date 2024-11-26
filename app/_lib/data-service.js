@@ -163,7 +163,6 @@ export async function createGuest(newGuest) {
     .insert([newGuest])
 
   if (error) {
-    console.error(error)
     throw new Error('Guest could not be created')
   }
 
